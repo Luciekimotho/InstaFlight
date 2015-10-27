@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InstaFlight</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="splash">splash</string>
+    <string name="fb">Sign up with Facebook</string>
+    <string name="twitter">Sign up with Twitter</string>
+    <string name="gplus">Sign up with Google+</string>
+    <string name="login">Login</string>
+    <string name="title_activity_event">Event</string>
+    <string name="action_settings">Settings</string>
+</resources>
