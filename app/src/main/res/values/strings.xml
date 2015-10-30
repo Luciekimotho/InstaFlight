@@ -14,4 +14,17 @@
     <string name="venue_name">Venue</string>
     <string name="along">Along Muthithi road</string>
     <string name="direction">Directions</string>
+    <string name="agenda">Agenda</string>
+    <string name="info">Information</string>
+    <string name="twitter2">Twitter Feed</string>
+    <string name="name">Name</string>
+    <string name="descr">Brief description</string>
+    <string name="photo">Profile photo</string>
+    <string name="twitterhandle">Twitter handle</string>
+    <string name="day1">DAY 1</string>
+    <string name="day2">DAY 2</string>
+    <string name="twitter_feed_here">Twitter feed goes here</string>
+    <string name="event_descr">The InstaFlight Conference 2015.</string>
+    <string name="wifi">WIFI</string>
+
 </resources>

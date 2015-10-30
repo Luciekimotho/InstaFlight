@@ -23,7 +23,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="10dp"
-        android:clickable="true"
         android:contentDescription="@string/event_images" />
 
 

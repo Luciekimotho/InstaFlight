@@ -31,16 +31,6 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         gplus.setOnClickListener(this);
         facebook.setOnClickListener(this);
 
-
-/*
-        TextView login = (TextView) findViewById(R.id.logintext);
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(SignUp.this, Event.class);
-                startActivity(i);
-            }
-        });*/
     }
 
     @Override

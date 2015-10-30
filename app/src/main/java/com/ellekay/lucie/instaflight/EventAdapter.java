@@ -1,6 +1,7 @@
 package com.ellekay.lucie.instaflight;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,10 +54,11 @@ public class EventAdapter extends BaseAdapter{
             TextView titleText = (TextView) gridView.findViewById(R.id.gridTxt);
             titleText.setText(titles[position]);
 
-            ImageView image = (ImageView) gridView.findViewById(R.id.gridImg);
-            //image.setImageResource(imageId[position]);
 
-           if (titles[position] == "SPEAKERS"){
+            ImageView image = (ImageView) gridView.findViewById(R.id.gridImg);
+
+
+            if (titles[position] == "SPEAKERS"){
                 image.setImageResource(R.drawable.speakers);
             }else if (titles[position] == "AGENDA"){
                 image.setImageResource(R.drawable.agenda);
@@ -70,4 +72,6 @@ public class EventAdapter extends BaseAdapter{
         }
         return gridView;
     }
+
+
 }
