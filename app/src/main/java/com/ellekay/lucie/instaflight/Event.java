@@ -2,13 +2,22 @@ package com.ellekay.lucie.instaflight;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
-public class Event extends AppCompatActivity {
+public class Event extends AppCompatActivity implements AdapterView.OnItemClickListener {
     GridView gridView;
     static final String[] Titles = new String[]{
-            "SPEAKERS", "AGENDA", "TWITTER FEED", "INFORMATION"
+            "SPEAKERS", "AGENDA", "TWITTER", "INFORMATION"
     };
+    static final int[] imageId = {
+            R.drawable.agenda,
+            R.drawable.speakers,
+            R.drawable.info,
+            R.drawable.twitter
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +25,12 @@ public class Event extends AppCompatActivity {
         setContentView(R.layout.activity_event);
 
         gridView = (GridView) findViewById(R.id.gridview);
-        gridView.setAdapter(new EventAdapter(this,Titles));
-
+        gridView.setAdapter(new EventAdapter(this, Titles, imageId));
 
     }
 
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+    }
 }

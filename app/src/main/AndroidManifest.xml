@@ -25,6 +25,28 @@
             android:label="@string/title_activity_event"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".Speakers"
+            android:label="@string/title_activity_speakers"
+            android:parentActivityName=".Event"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ellekay.lucie.instaflight.Event" />
+        </activity>
+        <activity android:name=".Twitter" >
+        </activity>
+        <activity android:name=".Information" >
+        </activity>
+        <activity android:name=".Agenda" >
+        </activity>
+        <activity android:name=".Venue" >
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
     </application>
 
 </manifest>

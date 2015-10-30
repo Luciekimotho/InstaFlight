@@ -1,10 +1,12 @@
 package com.ellekay.lucie.instaflight;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -15,7 +17,9 @@ public class EventAdapter extends BaseAdapter{
     private String[] titles;
     private int[]imageId;
 
-    public EventAdapter(Context c, String[] titles){
+
+
+    public EventAdapter(Context c, String[] titles, int[] imageId){
         mContext = c;
         this.titles = titles;
         this.imageId = imageId;
@@ -23,6 +27,7 @@ public class EventAdapter extends BaseAdapter{
 
     @Override
     public int getCount() {
+        Log.d("count", " is:"+titles.length);
         return titles.length;
     }
 
@@ -30,7 +35,6 @@ public class EventAdapter extends BaseAdapter{
     public Object getItem(int position) {
         return null;
     }
-
     @Override
     public long getItemId(int position) {
         return 0;
@@ -48,6 +52,19 @@ public class EventAdapter extends BaseAdapter{
 
             TextView titleText = (TextView) gridView.findViewById(R.id.gridTxt);
             titleText.setText(titles[position]);
+
+            ImageView image = (ImageView) gridView.findViewById(R.id.gridImg);
+            //image.setImageResource(imageId[position]);
+
+           if (titles[position] == "SPEAKERS"){
+                image.setImageResource(R.drawable.speakers);
+            }else if (titles[position] == "AGENDA"){
+                image.setImageResource(R.drawable.agenda);
+            }else if (titles[position] == "TWITTER"){
+                image.setImageResource(R.drawable.twitter);
+            }else if (titles[position] == "INFORMATION") {
+                image.setImageResource(R.drawable.info);
+            }
         }else {
             gridView = (View)convertView;
         }
