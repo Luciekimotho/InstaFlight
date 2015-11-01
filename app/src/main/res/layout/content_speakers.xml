@@ -9,27 +9,12 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_speakers" tools:context="com.ellekay.lucie.instaflight.Speakers">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/speaker"
-        android:id="@+id/textView"
-        android:layout_gravity="top|center"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="114dp"
-        android:layout_marginStart="114dp" />
-
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/cardview"
-        android:layout_below="@+id/textView"
+        android:id="@+id/speakercard"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="19dp">
+        android:layout_alignParentStart="true">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -39,35 +24,34 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:contentDescription="@string/photo"
-                android:id="@+id/imageView"
-                android:src="@drawable/speakers"
+                android:id="@+id/speakerImg"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
 
             <TextView android:layout_width="wrap_content"
                 android:layout_height="15dp"
-                android:id="@+id/name"
-                android:text="@string/name"
-                android:layout_below="@+id/descr"
-                android:layout_toRightOf="@+id/imageView"
-                android:layout_toEndOf="@+id/imageView" />
-
-            <TextView android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/descr"
-                android:text="@string/descr"
-                android:layout_below="@+id/twit"
-                android:layout_alignLeft="@+id/twit"
-                android:layout_alignStart="@+id/twit" />
-
-            <TextView android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/twit"
-                android:text="@string/twitterhandle"
+                android:id="@+id/speakerName"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/imageView"
-                android:layout_toEndOf="@+id/imageView" />
+                android:layout_toRightOf="@+id/speakerImg"
+                android:layout_toEndOf="@+id/speakerImg"
+                android:layout_marginTop="15dp" />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/speakerDescr"
+
+                android:layout_below="@+id/speakerName"
+                android:layout_toRightOf="@+id/speakerImg"
+                android:layout_toEndOf="@+id/speakerImg" />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/speakerTwit"
+
+                android:layout_below="@+id/speakerDescr"
+                android:layout_toRightOf="@+id/speakerImg"
+                android:layout_toEndOf="@+id/speakerImg" />
 
         </RelativeLayout>
 
