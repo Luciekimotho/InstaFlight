@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageView
+            <com.alexzh.circleimageview.CircleImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:contentDescription="@string/photo"

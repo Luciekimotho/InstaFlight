@@ -26,5 +26,6 @@
     <string name="twitter_feed_here">Twitter feed goes here</string>
     <string name="event_descr">The InstaFlight Conference 2015.</string>
     <string name="wifi">WIFI</string>
+    <string name="title_activity_day1">Day1</string>
 
 </resources>
