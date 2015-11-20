@@ -6,7 +6,7 @@
     android:layout_height="match_parent" android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context="com.ellekay.lucie.instaflight.Agenda"
-    android:background="@drawable/day">
+    android:background="#d2d5e8">
 
 
     <TextView
@@ -18,28 +18,60 @@
         android:textAllCaps="true"
         android:layout_gravity="center_horizontal" />
 
-    <android.support.v7.widget.CardView
-        android:layout_height="100dp"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="20dp"
-        android:id="@+id/day1card"
-        android:background="#d4a9a9">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/day1"/>
-    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/day1"
+        android:layout_gravity="center_horizontal" />
 
     <android.support.v7.widget.CardView
-        android:layout_height="100dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/day1card"
+        android:background="#d4a9a9"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/agenda_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agenda_day_one"
+            android:layout_gravity="center_horizontal" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/day2"
+        android:layout_gravity="center_horizontal" />
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:id="@+id/day2card"
         android:background="#e17e7e"
+        app:cardCornerRadius="5dp"
         >
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/agenda_two"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/day2"/>
+            android:text="@string/agenda_day_two"
+            android:layout_gravity="center_horizontal" />
     </android.support.v7.widget.CardView>
 
 </LinearLayout>

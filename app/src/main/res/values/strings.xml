@@ -27,5 +27,15 @@
     <string name="event_descr">The InstaFlight Conference 2015.</string>
     <string name="wifi">WIFI</string>
     <string name="title_activity_day1">Day1</string>
+    <string name="agenda_day_one">A Week in the Life of a Fabric Developer
+BRIAN SWIFT AND HEMAL SHAH Developing an app is a journey, as you try to go from concept to cash as fast as possible. You need to
+        spend your time focused on building amazing user experiences rather than dealing with bug fixes or the stress of a new
+        release. This talk will walk through a typical week of a developer, highlighting all of the ways you and your team can
+        use Fabric to take your development quality and speed to the next level.</string>
+    <string name="agenda_day_two">Growing and Monetizing Your App Using Twitter
+JOHN EGAN Learn more about the lifecycle of building, maintaining, and monetizing an audience with Twitter developer tools.
+        This session will include an overview of organic distribution products, the mobile app promotion suite for user acquisition,
+        and monetization using the MoPub platform. The goal of this overview is providing the tools and best practices to help you
+        turn your apps into a business.</string>
 
 </resources>

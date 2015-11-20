@@ -16,16 +16,12 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.content_sign_up);
 
         twitter = (Button) findViewById(R.id.button);
         gplus = (Button) findViewById(R.id.button2);
         facebook = (Button) findViewById(R.id.button3);
 
-        TextView login = (TextView) findViewById(R.id.logintext);
-        login.setOnClickListener(this);
 
         twitter.setOnClickListener(this);
         gplus.setOnClickListener(this);
@@ -45,9 +41,6 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         }else if (id == R.id.button3){
             Intent i3 = new Intent(SignUp.this, Event.class);
             startActivity(i3);
-        }else if (id == R.id.logintext) {
-            Intent i = new Intent(SignUp.this, Event.class);
-            startActivity(i);
         }
 
     }
